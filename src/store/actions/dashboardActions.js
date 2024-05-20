@@ -1,0 +1,11 @@
+// Actions for the service call
+
+// Actions to get the list of restaurants
+export const GET_RESTAURANTS_REQUEST = 'GET_RESTAURANTS_REQUEST';
+export const GET_RESTAURANTS_SUCCESS = 'GET_RESTAURANTS_SUCCESS';
+export const GET_RESTAURANTS_FAILURE = 'GET_RESTAURANTS_FAILURE';
+
+// Actions to get all the categories
+export const GET_ALL_CATEGORIES_REQUEST = 'GET_ALL_CATEGORIES_REQUEST';
+export const GET_ALL_CATEGORIES_SUCCESS = 'GET_ALL_CATEGORIES_SUCCESS';
+export const GET_ALL_CATEGORIES_FAILURE = 'GET_ALL_CATEGORIES_FAILURE';

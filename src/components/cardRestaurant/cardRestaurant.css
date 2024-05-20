@@ -1,0 +1,177 @@
+.linkUrl {
+    all: unset;
+    cursor: pointer;
+}
+
+.cardRestaurantDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+@media (min-width: 600px) {
+    .cardRestaurantDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-left: 5px;
+        box-shadow: 0 2px 4px 0 #00000033;
+        border-radius: .5em;
+        border: 1px solid transparent;
+    }
+    .cardRestaurantDiv:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-color: orange;
+        background-color: transparent;
+    }
+}
+.titleContainer{
+    text-align: left;
+    width: 250px;
+}
+@media (min-width: 768px){
+    .titleContainer{
+        text-align: center;
+        width: 200px;
+    }
+}
+
+.titleCardRestaurant {
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (min-width: 600px) {
+    .titleCardRestaurant {
+        margin-left: .5em;
+    }
+}
+
+.imageCardRestaurant {
+    width: 7.8em;
+    height: 7.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+@media (min-width: 600px) {
+    .imageCardRestaurant {
+        width: 10em;
+        height: 10em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.starsContainer {
+    margin-top: -1.5em;
+    position: relative;
+
+}
+
+.divider{
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 30%;
+}
+@media (min-width: 600px) {
+    .divider{
+        width: 80%;
+        border-top: 1px solid #d9d9d9;
+        border-radius: 30%;
+    }
+}
+.rowRestaurant {
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+
+/* Star Styles */
+.fa-star {
+    padding-right: 4px;
+}
+.starBasic{
+    color: white;
+    text-shadow: 0 0 4px #ffc55a;
+}
+.starChecked{
+    color: gold;
+    text-shadow: 0 0 4px #ffc55a;
+}
+.starHalfChecked {
+    color: white;
+    text-shadow: 0 0 4px #ffc55a;
+    
+}
+.starHalfChecked:after {
+    content:'\2605\2605\2605\2605\2605';
+    color: gold;
+    position: absolute;
+    margin-left: -15px;
+    width: 7px;
+    overflow: hidden;
+}
+
+
+/* Price Styles */
+.priceRestaurant {
+    text-align: left;
+}
+@media (min-width: 600px) {
+    .priceRestaurant {
+        text-align: right;
+    } 
+}
+/* Button View styles */
+.button-container{
+    position: relative;
+    height: 1.5em;
+    width: 100px;
+}
+
+.buttonView {
+    margin-top: -8px;
+    width: 80%;
+    height: 2.8em;
+    border-radius: .5em;
+    border-width: 0px;
+    position: absolute;
+    background: #fcab07;
+    background: linear-gradient(90deg, #fcab07 0%, #ffd278 100%);
+    color: white;
+}
+
+.buttonView:hover {
+    background: white;
+    color: #fcab07;
+    border-color: #fcab07;
+    border-width: 1px;
+    cursor: pointer;
+}
+@media (min-width: 600px) {
+    .buttonView {
+        margin-top: 0px;
+        width: 100%;
+        height: 3em;
+        border-radius: .5em;
+        border-width: 0px;
+        position: absolute;
+        background: #fcab07;
+        background: linear-gradient(90deg, #fcab07 0%, #ffd88b 100%);
+        color: white;
+    }
+    
+    .buttonView:hover {
+        background: white;
+        color: #fcab07;
+        border-color: #fcab07;
+        border-width: 1px;
+        cursor: pointer;
+    }
+}
